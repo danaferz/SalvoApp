@@ -68,25 +68,7 @@ public class SalvoController {
 
     @RequestMapping(path = "/game/{id}/players", method = RequestMethod.POST)
     public ResponseEntity<Object> joinGame(Authentication authentication, @PathVariable Long id) {
-/*
-        if (isGuest(authentication)) {
-            return new ResponseEntity<>(makeMap("error", "No esta loggeado"), HttpStatus.UNAUTHORIZED);
-        } else {
-            Player player = playerRepository.findByUserName(authentication.getName());
-            Game game = gameRepository.findById(id).get();
-            if (game == null) {
-                return new ResponseEntity<>(makeMap("error", "No existe el juego"), HttpStatus.FORBIDDEN);
-            } else {
-                if (game.getGamePlayers().size() == 2) {
-                    return new ResponseEntity<>(makeMap("error", "Game is full"), HttpStatus.FORBIDDEN);
-                } else {
-                    GamePlayer gamePlayer = gamePlayerRepository.save(new GamePlayer(player, game));
-                    return new ResponseEntity<>(makeMap("gpid", gamePlayer.getId()), HttpStatus.CREATED);
-                }
-            }
 
-        }
- */
         if (isGuest(authentication)) {
             return new ResponseEntity<>(makeMap("error", "No esta loggeado"), HttpStatus.UNAUTHORIZED);
         }
