@@ -1,14 +1,16 @@
 body {
     background: url(../img/back2.jpg);
     font-family: 'Dosis', sans-serif;
+    background-position: center;
+}
+
+div {
+    margin: 10px;
 }
 
 .bannerTitle {
     margin: 15px auto 0;
     text-align: center;
-    background: #00000038;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 .blockInline {
@@ -90,8 +92,8 @@ body {
 }
 
 #gamesList {
-    width: 75%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 2px auto;
     opacity: 0.9;
 }
 
@@ -347,8 +349,9 @@ button:focus {
 }
 
 #login-form {
-    justify-content: flex-end;
+    justify-content: center;
     color: white;
+    margin-left: 250px;
 }
 
 #username, #password {
@@ -383,8 +386,11 @@ button:focus {
 }
 
 .currentPlayerContainer {
-    text-align: center;
+    text-align: right;
+    color: white;
 }
+
+
 
 #currentPlayer {
     font-size: 1.2em;

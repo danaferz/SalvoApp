@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Salvo!</title>
+  <title>Salvo! game</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -10,16 +10,16 @@
 <div class="container-fluid">
     <div class="bannerTitle"><img class="bannerImageGames" src="img/titlebannersalvo.png"></div>
     <div id="loginBlock" class="row">
+        <div class="currentPlayerContainer">Current player: <span id="currentPlayer"></span>
         <div class="col-sm-12">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="currentPlayerContainer">Current player: <span id="currentPlayer"></span>
                         <form class="form" id="logout-form" onsubmit="return false">
                             <button type="submit" class="btn btn-info">Log out</button>
                         </form>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-12">
                     <form class="form-inline" id="login-form" onsubmit="return false">
                         <label for="username">Name:</label><input class="form-control" id="username" type="email"
                                                                   name="username" required>
